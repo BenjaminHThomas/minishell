@@ -1,11 +1,41 @@
-Agree on rules for repo maintenance
+# Minishell
+A group project by Ben Thomas and Jean Teissier.
 
-Identify features to implement
+## Intro
+Minishell is a miniature, but powerful, version of the bash command line interface.
+You can do most of what you want:
+- Launch executables
+- Navigate & create files/directories
+- Use vim & other command line tools
+- Pipe commands into one another
+- Create heredocs
+- Redirect input/output
+- Create, export & expand environment variables
+- Access the exit status of the previous command {$?}
 
-Identify tasks
+Some key features we didn't implement for simplicity:
+- Parentheses
+- $$ and || operators
+- background execution (&)
 
-Plan to complete tasks
+## Getting started
+```
+make
+./minishell
+```
+Run the make command to compile the program, and ./minishell to launch the executable.
 
-Set up workflow to check norm (maybe)
+After that you're free to do what ever you want. Some interesting commands to try:
+```
+export make=Make
+cat $make'file'
+```
 
-Do not push on master or we die
+```
+vim test.txt
+```
+
+```
+echo ::::???'''""$PATH""'''????::::
+```
+
